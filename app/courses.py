@@ -119,7 +119,7 @@ def s3_upload(username):
     fname_rotated270 = os.path.join('app/static', 'rotated270_' + new_file1.filename)
     i3.save(filename=fname_rotated270)
 
-    """    aa = 'app/static/rotated90_'+new_file1.filename
+    aa = 'app/static/rotated90_'+new_file1.filename
     bb = 'app/static/rotated180_'+new_file1.filename
     cc = 'app/static/rotated270_'+new_file1.filename
     print(aa)
@@ -127,7 +127,7 @@ def s3_upload(username):
     s3.meta.client.upload_file(aa, username, 'rotated90_' + new_file1.filename)
     s3.meta.client.upload_file(bb, username, 'rotated180_' + new_file1.filename)
     s3.meta.client.upload_file(cc, username, 'rotated270_' + new_file1.filename)
-"""
+
 
     it0 = img.clone()
     it0.rotate(0)
