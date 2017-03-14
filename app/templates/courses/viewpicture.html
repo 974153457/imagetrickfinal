@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+    <form action="{{url_for('viewbig',papa = f1[8:])}}" method="post">
+        <input type="submit" value="View Big Picture"> View Big Picture No Rotate
+    </form>
+    <table /> 
+    <img src = '{{f1}}' />
+    </table>
+
+    <form action="{{url_for('viewbig',papa = f2[8:])}}" method="post">
+        <input type="submit" value="View Big Picture"> View Big Picture Rotate 90
+    </form>
+    <table />
+    <img src = '{{f2}}' />
+    </table>
+
+
+    <form action="{{url_for('viewbig',papa = f3[8:])}}" method="post">
+        <input type="submit" value="View Big Picture"> View Big Picture Rotate 180
+    </form>
+    <table />
+    <img src = '{{f3}}' />
+    </table>
+
+
+    <form action="{{url_for('viewbig',papa = f4[8:])}}" method="post">
+        <input type="submit" value="View Big Picture"> View Big Picture Rotate 270
+    </form>
+    <table />
+    <img src = '{{f4}}' />
+    </table>
+{% endblock %}
